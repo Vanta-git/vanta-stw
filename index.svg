@@ -2,12 +2,13 @@
 <svg xmlns="http://www.w3.org/2000/svg"
      xmlns:xhtml="http://www.w3.org/1999/xhtml"
      width="100%" height="100%"
-     viewBox="0 0 100 100"
-     preserveAspectRatio="none">
-  <foreignObject x="0" y="0" width="100" height="100">
-    <xhtml:iframe xmlns:xhtml="http://www.w3.org/1999/xhtml"
-      src="index.html"
-      style="width:100%;height:100%;border:0;display:block;background:#000;"
-      frameborder="0" scrolling="auto"></xhtml:iframe>
+     style="width:100vw;height:100vh;display:block;margin:0;padding:0;background:#000;">
+  <xhtml:style>
+    html, body { margin:0 !important; padding:0 !important; width:100% !important; height:100% !important; overflow:hidden !important; background:#000 !important; }
+    iframe { display:block; width:100vw; height:100vh; border:0; margin:0; padding:0; }
+  </xhtml:style>
+  <foreignObject x="0" y="0" width="100%" height="100%">
+    <xhtml:iframe src="./index.html" frameborder="0" scrolling="auto"
+      style="display:block;width:100%;height:100%;border:0;margin:0;padding:0;background:#000;"></xhtml:iframe>
   </foreignObject>
 </svg>
